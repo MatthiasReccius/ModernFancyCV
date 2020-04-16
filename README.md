@@ -1,6 +1,8 @@
 # ModernFancyCV
 a modern CV template for LaTeX to wow your next employer
 
+ModernFancyCV_2020.pdf
+
 ModernFancyCV is a resume template for 2020 that aims to fulfill and surpass the expectations of any HR guy or gall. 
 All important information fits on a single page while maintaining clarity.
 It is aimed primarily at recent college grads, but everyone else can simply swap the "Education" and "Experience" sections and is ready to go.
