@@ -2,7 +2,7 @@
 % 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{friggeri-cv_reccius-experiment}[2012/04/30 CV class, modified 2020/04/17]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -106,12 +106,12 @@
 % 
 % \defaultfontfeatures{Mapping=tex-text}
 % \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-% 
-% \setmathfont{XITS Math}
+% \setmathfont{latinmodern-math.otf}
 
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
+\setmathfont{latinmodern-math.otf}
 
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
@@ -130,7 +130,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 ]
 {texgyreheros-regular.otf}
 
-\setmathfont{texgyreheros-regular.otf}
+% \setmathfont{texgyreheros-regular.otf}
 %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,8 +231,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
-    \fontsize{9.5pt}{5cm}\selectfont\addfontfeature{Color=darkergray}#1&\parbox[t]{13.6cm}{%
-    \fontsize{11.5pt}{5cm}\selectfont\textbf{#2}%
+    \fontsize{9.4pt}{5cm}\selectfont\addfontfeature{Color=darkergray}#1&\parbox[t]{13.6cm}{%
+    \fontsize{11.4pt}{5cm}\selectfont\textbf{#2}%
     \textbf{\selectfont\addfontfeature{Color=darkergray}#3}%
     \hspace{2mm}%
     {\footnotesize\addfontfeature{Color=seafoamgreen} #4}\vspace{1mm}\\%
@@ -442,7 +442,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{refsection}
 }
 
-\DeclareSortingScheme{chronological}{
+\DeclareSortingTemplate{chronological}{
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
